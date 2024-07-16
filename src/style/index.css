@@ -41,7 +41,7 @@ body {
   transition: box-shadow 0.4s ease;
 }
 .widget:hover {
-  box-shadow: 0 0 25px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255) inset;
+  box-shadow: 0 0 25px #d5782c, 0 0 15px #d5782c inset;
 }
 
 .widget .cover {
@@ -51,7 +51,7 @@ body {
 .widget .cover img {
   width: 100%;
   height: auto;
-  min-height: 160px;
+  min-height: 300px;
   border-radius: 4px 4px 0 0;
 }
 .widget .photo {
@@ -85,15 +85,15 @@ body {
 }
 .widget ul {
   position: absolute;
-  top: 20px;
+  top: 1px;
   padding: 0;
-  background: #2cdfd3;
+  background: #000000;
 }
 .widget ul.position-left {
-  left: -26px;
+  left: -55px;
 }
 .widget ul.position-right {
-  right: -27px;
+  right: -55px;
 }
 .widget ul li {
   list-style: none;
@@ -104,16 +104,24 @@ body {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
-  transition: background-color 0.3s;
+  border: 1px solid #d5782c;
+  border-radius: 50%;
+  transition: 0.3s;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, opacity 2s ease;
+  transform: scale(1);
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background-color: #d5782c;
+  box-shadow: 0 0 35px #d5782c;
+  box-shadow: 0 0 25px #d5782c, 0 0 15px #d5782c inset;
+  transform: scale(1.2) translateZ(20px);
 }
 .widget ul li:first-child > a {
-  border-radius: 0 3px 0 0;
+  border: 1px solid #d5782c;
+  border-radius: 50%;
 }
 .widget ul li:last-child > a {
-  border: none;
-  border-radius: 0 0 3px 0;
+  border: 1px solid #d5782c;
+  border-radius: 50%;
 }
