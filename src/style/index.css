@@ -6,6 +6,7 @@ body {
 .filters {
   background: #6866666e;
   border: 2px solid #6866666e;
+  border-radius: 15px;
 }
 .filters li {
   display: inline-block;
