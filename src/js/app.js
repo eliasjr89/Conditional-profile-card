@@ -24,7 +24,6 @@ import "../style/index.css";
  */
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); // print on the console
-  // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
@@ -81,8 +80,7 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background:
-      "https://t4.ftcdn.net/jpg/08/00/61/83/240_F_800618361_wBbxAzNnWM8fkbqeFY3TPBAIscvTZKLC.jpg",
+    background: "",
     // this is the url for the profile avatar
     avatarURL:
       "https://st2.depositphotos.com/2501025/5406/i/600/depositphotos_54065893-stock-photo-hacker.jpg",
@@ -114,6 +112,28 @@ window.onload = function() {
           : this.value == "false"
           ? false
           : this.value;
+
+      // switch case for background selection
+      if (attribute === "background") {
+        switch (this.value) {
+          case "fondo1":
+            values[attribute] = "public/assets/img/océano.png";
+            break;
+          case "fondo2":
+            values[attribute] = "public/assets/img/margaritas.png";
+            break;
+          case "fondo3":
+            values[attribute] = "public/assets/img/everest.png";
+            break;
+          case "fondo4":
+            values[attribute] = "public/assets/img/planta.png";
+            break;
+          default:
+            values[attribute] = "";
+            break;
+        }
+      }
+
       render(Object.assign(window.variables, values)); // render again the card with new values
     });
   });

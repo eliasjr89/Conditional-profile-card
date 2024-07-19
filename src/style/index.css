@@ -19,7 +19,7 @@ body {
   font-weight: 900;
 }
 .filters li input {
-  width: 100%;
+  width: 50px;
   text-decoration: none;
   border: none;
   border-radius: 15px;
