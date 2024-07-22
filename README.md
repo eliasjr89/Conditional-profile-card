@@ -24,7 +24,7 @@ https://github.com/breatheco-de/exercise-conditional-profile-card.git
 
 To see the result in the browser, you will need to start the project by running the following command in your terminal:
 ```bash
-$ npm run start
+npm$ npm run start
 ```
 
 > 💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.

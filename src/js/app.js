@@ -113,20 +113,32 @@ window.onload = function() {
           ? false
           : this.value;
 
-      // switch case for background selection
+      // switch for background select
       if (attribute === "background") {
         switch (this.value) {
           case "fondo1":
             values[attribute] = "public/assets/img/océano.png";
             break;
           case "fondo2":
-            values[attribute] = "public/assets/img/margaritas.png";
+            values[attribute] = "public/assets/img/everest.png";
             break;
           case "fondo3":
-            values[attribute] = "public/assets/img/everest.png";
+            values[attribute] = "public/assets/img/margaritas.png";
             break;
           case "fondo4":
             values[attribute] = "public/assets/img/planta.png";
+            break;
+          case "fondo5":
+            values[attribute] = "public/assets/img/ciudad.png";
+            break;
+          case "fondo6":
+            values[attribute] = "public/assets/img/nubes.png";
+            break;
+          case "fondo7":
+            values[attribute] = "public/assets/img/universo.png";
+            break;
+          case "fondo8":
+            values[attribute] = "public/assets/img/programacion.png";
             break;
           default:
             values[attribute] = "";
